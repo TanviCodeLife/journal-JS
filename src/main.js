@@ -11,4 +11,11 @@ $(document).ready(function() {
       let title = $('#title').val();
       let entry = $('#entry').val();
       let newEntry = new Entry(date, title, journalEntry);
+      let newEntryResult = `${newEntry.title}
+        ${newEntry.date}
+        ${newEntry.wordInSentenceCount}
+        ${newEntry.vowelsInSentenceCount}
+        ${newEntry.consonantsInSentenceCount}
+        ${newEntry.getTeaser()}`
+      $("journal-output").append(newEntryResult);
 });
