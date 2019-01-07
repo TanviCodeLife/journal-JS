@@ -9,13 +9,19 @@ $(document).ready(function() {
       event.preventDefault();
       let date = $('#date').val();
       let title = $('#title').val();
-      let entry = $('#entry').val();
+      let journalEntry = $('#entry').val();
       let newEntry = new Entry(date, title, journalEntry);
-      let newEntryResult = `${newEntry.title}
-        ${newEntry.date}
-        ${newEntry.wordInSentenceCount}
-        ${newEntry.vowelsInSentenceCount}
-        ${newEntry.consonantsInSentenceCount}
-        ${newEntry.getTeaser()}`
-      $("journal-output").append(newEntryResult);
+      let newEntryResult = `Title: ${newEntry.title}
+
+        Date: ${newEntry.date}
+
+        Words Count: ${newEntry.wordInSentenceCount()}
+
+        Vowels Count: ${newEntry.vowelsInSentenceCount()}
+
+        Consonant Count: ${newEntry.consonantsInSentenceCount()}
+
+        Teaser: ${newEntry.getTeaser()}`;
+      $("#journal-output").append(newEntryResult);
+    });
 });

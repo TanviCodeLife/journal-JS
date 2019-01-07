@@ -5,18 +5,18 @@ export function Entry(date, title, journalEntry) {
 }
 
 Entry.prototype.wordInSentenceCount = function() {
-  let words = this.journalEntry.split(" ");
-  return words.length;
+  let words = this.journalEntry.split(" ").length;
+  return words;
 };
 
 Entry.prototype.vowelsInSentenceCount = function() {
-  let vowels = this.journalEntry.match(/[aeiouAEIOU]/gi);
-  return vowels === null ? 0 : vowels.length;
+  let vowels = this.journalEntry.match(/[aeiouAEIOU]/gi).length;
+  return vowels === null ? 0 : vowels;
 };
 
 Entry.prototype.consonantsInSentenceCount = function() {
-  let vowels = this.journalEntry.match(/[^aeiouAEIOU *.!%@&#123456789]/gi);
-  return vowels === null ? 0 : vowels.length;
+  let consonants = this.journalEntry.match(/[^aeiouAEIOU *.!%@&#123456789]/gi).length;
+  return consonants === null ? 0 : consonants;
 };
 
 Entry.prototype.getTeaser= function() {
