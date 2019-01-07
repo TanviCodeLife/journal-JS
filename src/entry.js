@@ -4,7 +4,7 @@ export function Entry(date, title, entry) {
   this.journalEntry = journalEntry;
 }
 
-Entry.prototype.wordCount = function() {
-  var words = this.entry.split(" ");
-  return entryWords.length;
+Entry.prototype.wordInSentenceCount = function() {
+  var words = this.journalEntry.split(" ");
+  return words.length;
 };
