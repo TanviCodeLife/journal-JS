@@ -1,12 +1,14 @@
-# Project Title
+# Journal Entry Fun
 
-#### Epicodus JavaScript exercise, Date
+#### Epicodus JavaScript exercise, Jan 6th 2019
 
-#### By Your Name Here
+#### Tanvi Garg
 
 ## Description
 
-Add description here
+ Journaling website where a user can write entries including title, body, date and time.
+ Return the number of vowels and consonants in each entry.
+If input sentence is over 8 words, only display those first 8 words
 
 ## Specs
 
@@ -27,9 +29,9 @@ Add description here
 ## Contribution Requirements
 
 1. Clone the repo
-1. Make a new branch
-1. Commit and push your changes
-1. Create a PR
+2. Make a new branch
+3. Commit and push your changes
+4. Create a PR
 
 ## Technologies Used
 
@@ -51,4 +53,4 @@ Add description here
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Tanvi Garg**
